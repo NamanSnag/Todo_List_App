@@ -1,0 +1,27 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "Todo app for routine and task management",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NamanSnag/Todo_List_App.git"
+  },
+  "keywords": [
+    "ToDo",
+    "LIst"
+  ],
+  "author": "Naman Nag",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NamanSnag/Todo_List_App/issues"
+  },
+  "homepage": "https://github.com/NamanSnag/Todo_List_App#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
