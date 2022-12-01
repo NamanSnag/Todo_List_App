@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f56a9;
+}
+
+.todo-Container {
+    color: black;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    padding: 20px;
+    width: 800px;
+    transform: translate(-50%,-0%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(16, 122, 235);
+}
+
+/* heading */
+.heading {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* todo task add */
+.head {
+    min-width: 80%;
+}
+
+/* task written area */
+#description {
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    border-radius: 2rem;
+    border: 2px solid rgb(243, 4, 4);
+    padding: 4px 10px 4px 4px;
+}
+
+.type {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.type div label {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(115, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#type {
+    border-bottom-left-radius: 2rem;
+    padding: 4px 10px 4px 4px;
+    border: 2px solid rgb(243, 4, 4);
+     display: flex;
+    justify-content: center;
+}
+
+#due {
+    border-bottom-right-radius: 2rem;
+    padding: 4px 10px 4px 4px;
+    border: 2px solid rgb(243, 4, 4);
+}
+
+/* add button */
+.add-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn {
+    width: 120px;
+    height: 30px;
+    background-color: greenyellow;
+    border: none !important;
+    border-radius: 2rem;
+}
+
+/* list */
+.todo-list {
+    width: 90%;
+}
+
+.todo-list-item {
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.478);
+    display: flex;
+}
+
+.todo-list-item div {
+    flex-grow: 2;
+    color: white;
+}
+
+.task {
+    max-width: 500px;
+}
+
+.todo-list-item .date {
+    color : rgb(143, 233, 58);
+    margin-right: 10px;
+    cursor:pointer;
+    text-decoration: none;
+}
+
+.type-w {
+    color : rgb(223, 230, 17);
+    margin-right: 10px;
+    cursor:pointer;
+    text-decoration: none;
+}
+
+.todo-list-item .remove {
+    color : rgb(243, 96, 96);
+    margin-right: 5px;
+    cursor:pointer;
+    text-decoration: none;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/Static/style.css">
+    <title><%= title %></title>
+</head>
+<body>
+    <main class="todo-Container">
+        <p class="heading">To-Do List</p>
+        <form action="/task" method="post" class="head">
+            <div class="description">
+                <input type="text" name="description" id="description" placeholder="Write Your Task Here" required>
+            </div>
+            <div class="type">
+                <div class="category">
+                    <select name="type" id="type">
+                        <option value="Choose">Choose the Category</option>
+                        <option value="Personal">Personal</option>
+                        <option value="Work">Work</option>
+                        <option value="School">School</option>
+                        <option value="Cleaning">Cleaning</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="due">Due Date :</label>
+                    <input type="date" name="due" id="due" required>
+                </div>
+            </div>
+            <div class="add-btn">
+                <a href="/task"><button type="submit" id="add-task" class="btn"> <i class="fas fa-plus"></i> Add Task</button></a>
+            </div>
+        </form>
+        <ul class="todo-list">
+            <% for(let i of task){ %>
+            <li class="todo-list-item">
+                <div class="task">
+                    <%= i.description %>
+                </div>
+
+                <a class="type-w">
+                    <%= i.type %>
+                 </a>
+
+                <a class="date">
+                   <%= i.due %>
+                </a>
+                
+                <a href="/remove/?id=<%= i._id %>" class="remove">
+                    <span class="fas fa-times"></span>
+                </a>
+            </li>
+            <% } %>
+        </ul>
+    </main>
+</body>
+</html>
