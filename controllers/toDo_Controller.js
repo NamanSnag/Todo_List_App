@@ -25,7 +25,6 @@ module.exports.task = function(req, res){
     }, (err, result) => {
         if(err) return error(err);
         const task = result;
-        console.log('**************',task);
         return res.redirect('back');
     });
 };

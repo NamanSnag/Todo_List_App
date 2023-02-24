@@ -2,6 +2,7 @@ const express = require('express');
 
 const path = require('path');
 
+// port were server is running
 const port = 80;
 
 // data base connection
